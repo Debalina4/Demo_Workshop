@@ -9,3 +9,7 @@ jobs:
     steps:
       - name: Greet the User hello
         run: echo "Hello World! hru?"
+  # List all files in the current directory for comparison before and after actions/checkout@v2.
+      - run: ls -l
+      - uses: actions/checkout@v2
+      - run: ls -l
